@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 //Create mongoose connection
- mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/portfolioDB', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/portfolioDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
